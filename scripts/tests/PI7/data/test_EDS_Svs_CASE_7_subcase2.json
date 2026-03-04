@@ -1,0 +1,21 @@
+{
+    "additional_data":[
+ 
+        {  
+            "docker_commands":[
+                                "/efs/edfs-deliveries/pi_7/subcase_2_res/build_subcase.sh"],
+                                  "flag":"partly"
+        }
+ 
+    ],
+    "d_loc" : [
+               "/home/jyoti.mikkilineni/pi_7/reservoirs"
+               ],
+    "d_files":[
+               ["rfc-da-hydraulics-v1.gpkg"]
+            ]
+
+
+
+
+}
