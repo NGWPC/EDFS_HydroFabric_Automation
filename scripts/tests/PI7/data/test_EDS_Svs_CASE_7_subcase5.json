@@ -6,7 +6,8 @@
                                 "/efs/edfs-deliveries/pi_7/subcase_5_res/build_subcase.sh"],
                                 "flag":"partly",
                                 "file":"/home/jyoti.mikkilineni/pi_7/reservoirs/reservoirs.qgz",
-                                "layers":"nwm_corrected — reservoirs"
+                                "layers":"reference-reservoirs.mbtiles"
+
         }
  
     ],

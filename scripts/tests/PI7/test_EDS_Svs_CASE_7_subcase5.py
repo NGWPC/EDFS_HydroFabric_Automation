@@ -2,7 +2,7 @@ import pytest
 from ..helpers import validate_directories_files
 from ..utils import qgz_util
 
-def test_EDS_Svs_CASE_7_subcase4(test_name,load_scenario_data,scenarios,fetch_docker_details,run_docker_script,fetch_layer_details):
+def test_EDS_Svs_CASE_7_subcase5(test_name,load_scenario_data,scenarios,fetch_docker_details,run_docker_script,fetch_layer_details):
     tn = test_name + '.json'
     folder_name = 'PI7/data'
 

@@ -284,3 +284,10 @@ def fetch_image_file_details():
         scenario = scenarios(folder_name , data_file)
         return scenario['additional_data'][0].get("image_file_path")
     return _fetch_dynamic_files_from_directory
+
+@pytest.fixture
+def fetch_layer_details():
+    def _fetch_layer_details(folder_name,data_file,scenarios):
+        scenario = scenarios(folder_name , data_file)
+        return scenario['additional_data'][0].get("file") , scenario['additional_data'][0].get("layers")
+    return _fetch_layer_details
