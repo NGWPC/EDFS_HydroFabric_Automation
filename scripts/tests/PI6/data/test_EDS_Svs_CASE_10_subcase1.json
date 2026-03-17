@@ -3,20 +3,14 @@
  
         {  
             "docker_commands":[
-                                "~/Downloads/build_subcase.sh",
-                            "papermill ~/Downloads/map_schism_output.ipynb ~/pw/automation/scripts/tests/PI6/data/map_schism_output_out.ipynb"],
+                                "/fsxtestautomation/data_files/hydro-data/build_subcase.sh",
+                            "python3 -m papermill /fsxtestautomation/data_files/hydro-data/map_schism_output_in.ipynb ~/pw/auto/scripts/tests/PI6/data/map_schism_output_out.ipynb"],
                                   "flag":"partly"
         }
  
     ],
      "output_notebook_location": "~/pw/automation/scripts/tests/PI6/data/map_schism_output_out.ipynb",
-     "input_notebook_location":"~/Downloads/map_schism_output.ipynb",
-    "d_loc" : [
-               "/home/jyoti.mikkilineni/pi_7/reservoirs"
-               ],
-    "d_files":[
-               ["rfc-da-hydraulics-v1.gpkg"]
-            ]
+     "input_notebook_location":"/fsxtestautomation/data_files/hydro-data/map_schism_output_in.ipynb"
 
 
 
