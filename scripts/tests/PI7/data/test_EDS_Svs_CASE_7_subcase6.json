@@ -1,0 +1,25 @@
+{
+    "additional_data":[
+ 
+        {  
+            "docker_commands":[
+                                "/efs/edfs-deliveries/pi_7/subcase_6/run_troute.sh","/fsxtestautomation/data_files/hydro-data/start_jupyter.sh",
+                                "uv venv --python 3.12 --clear",
+                    "source .venv/bin/activate",
+                    "curl -O https://bootstrap.pypa.io/get-pip.py",
+                    "~/.venv/bin/python get-pip.py",
+                    "~/.venv/bin/python -m pip install --upgrade matplotlib",
+                    "~/.venv/bin/pip install papermill ipykernel seaborn pandas",
+                    "~/.venv/bin/python -m papermill --version",
+                            "python3 -m papermill /fsxtestautomation/data_files/hydro-data/examine_outputs_in.ipynb ~/pw/auto/scripts/tests/PI7/data/examine_outputs_out.ipynb"],
+                                  "flag":"partly"
+        }
+ 
+    ],
+     "output_notebook_location": "~/pw/automation/scripts/tests/PI7/data/examine_outputs_out.ipynb",
+     "input_notebook_location":"/fsxtestautomation/data_files/hydro-data/examine_outputs_in.ipynb"
+
+
+
+
+}
