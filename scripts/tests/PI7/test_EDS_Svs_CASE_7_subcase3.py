@@ -2,7 +2,7 @@ import pytest
 import os
 from ..utils import compare_images_util
 
-def test_EDS_Svs_CASE_7_subcase6(test_name,load_scenario_data,scenarios,fetch_docker_details,run_docker_script,fetch_notebook_location_details):
+def test_EDS_Svs_CASE_7_subcase3(test_name,load_scenario_data,scenarios,fetch_docker_details,run_docker_script,fetch_notebook_location_details):
     tn = test_name + '.json'
     folder_name = 'PI7/data'
 

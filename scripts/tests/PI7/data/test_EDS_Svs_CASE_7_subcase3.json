@@ -3,7 +3,8 @@
  
         {  
             "docker_commands":[
-                                "/efs/edfs-deliveries/pi_7/subcase_6/run_troute.sh","/fsxtestautomation/data_files/hydro-data/start_jupyter_PI7_sub6.sh",
+                                "/efs/edfs-deliveries/pi_7/subcase_3/run_api.sh","/efs/edfs-deliveries/pi_7/subcase_3/run_troute.sh",
+                                "/fsxtestautomation/data_files/hydro-data/start_jupyter_PI7_sub3.sh",
                                 "uv venv --python 3.12 --clear",
                     "source .venv/bin/activate",
                     "curl -O https://bootstrap.pypa.io/get-pip.py",
@@ -11,12 +12,12 @@
                     "~/.venv/bin/python3 -m pip install --upgrade matplotlib",
                     "~/.venv/bin/pip install papermill ipykernel seaborn pandas xarray geopandas folium matplotlib mapclassify branca matplotlib pyprojroot netCDF4",
                     "~/.venv/bin/python -m papermill --version",
-                            "~/.venv/bin/python3 -m papermill /fsxtestautomation/data_files/hydro-data/examine_outputs_in.ipynb ~/pw/auto/scripts/tests/PI7/data/examine_outputs_out.ipynb"
+                            "~/.venv/bin/python3 -m papermill /fsxtestautomation/data_files/hydro-data/examine_output_PI7_sub3_in.ipynb ~/pw/auto/scripts/tests/PI7/data/examine_output_PI7_sub3_out.ipynb"
             ],
                                   
             "flag":"partly",
-            "output_notebook_location": "~/pw/auto/scripts/tests/PI7/data/examine_outputs_out.ipynb",
-            "input_notebook_location":"/fsxtestautomation/data_files/hydro-data/examine_outputs_in.ipynb"
+            "output_notebook_location": "~/pw/auto/scripts/tests/PI7/data/examine_output_PI7_sub3_out.ipynb",
+            "input_notebook_location":"/fsxtestautomation/data_files/hydro-data/examine_output_PI7_sub3_in.ipynb"
         }
  
     ]
