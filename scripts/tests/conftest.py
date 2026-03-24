@@ -291,3 +291,10 @@ def fetch_layer_details():
         scenario = scenarios(folder_name , data_file)
         return scenario['additional_data'][0].get("file") , scenario['additional_data'][0].get("layers")
     return _fetch_layer_details
+
+@pytest.fixture
+def fetch_table_details():
+    def _fetch_table_details(folder_name,data_file,scenarios):
+        scenario = scenarios(folder_name , data_file)
+        return scenario['additional_data'][0].get("expected_fields")
+    return _fetch_table_details

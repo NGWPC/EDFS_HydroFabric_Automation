@@ -75,10 +75,10 @@ def image_differences(input_notebook_location,output_notebook_location):
 
 # list_cells("/home/jyoti.mikkilineni/pw/automation/scripts/tests/PI6/data/view_outputs_output_nb.ipynb")
 
-def verify_table_fields(path, tag_name = 'table_validation'):
+def verify_table_fields(path,expected_fields,tag_name = 'table_validation'):
     with open(path) as f:
         nb = nbformat.read(f, as_version=4)
-    expected_fields = {'field_1','feature_id','feature_id_str','strm_order','name','state','streamflow_cfs','inherited_rfc_forecasts','max_status','reference_time','update_time','geometry'}
+    # expected_fields = {'field_1','feature_id','feature_id_str','strm_order','name','state','streamflow_cfs','inherited_rfc_forecasts','max_status','reference_time','update_time','geometry'}
     tagged_cells_exist = False
     for cell in nb.cells:
         if cell.cell_type == "code" and tag_name in cell.get("metadata", {}).get("tags", []):
@@ -92,7 +92,7 @@ def verify_table_fields(path, tag_name = 'table_validation'):
                         table = soup.find("table")
                         if table:
                             headers = {th.get_text(strip=True) for th in table.find_all("th")}
-                            if expected_fields.issubset(headers):
+                            if set(expected_fields).issubset(headers):
                                 logging.info(f"All expected columns {expected_fields} found")
                                 return True
                             else:

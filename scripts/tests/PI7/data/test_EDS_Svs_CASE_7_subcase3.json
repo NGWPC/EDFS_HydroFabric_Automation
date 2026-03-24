@@ -17,7 +17,14 @@
                                   
             "flag":"partly",
             "output_notebook_location": "~/pw/auto/scripts/tests/PI7/data/examine_output_PI7_sub3_out.ipynb",
-            "input_notebook_location":"/fsxtestautomation/data_files/hydro-data/examine_output_PI7_sub3_in.ipynb"
+            "input_notebook_location":"/fsxtestautomation/data_files/hydro-data/examine_output_PI7_sub3_in.ipynb",
+            "expected_fields":[
+                "id",
+                "toid",
+                "divide_id",
+                "ds_id",
+                "mainstem","hydroseq","hf_source","hf_id","lengthkm","areasqkm","tot_drainage_areasqkm","type","vpuid","hf_hydroseq","hf_lengthkm","hf_mainstem","topo","poi_id","hl_uri"
+            ]
         }
  
     ]
