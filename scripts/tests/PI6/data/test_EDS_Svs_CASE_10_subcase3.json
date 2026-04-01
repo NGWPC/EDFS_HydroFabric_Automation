@@ -1,0 +1,26 @@
+{
+    "additional_data":[
+ 
+        {  
+            "docker_commands":[
+                                "/fsxtestautomation/data_files/hydro-data/build_subcase.sh",
+                                "uv venv --python 3.12 --clear",
+                    "source .venv/bin/activate",
+                    "curl -O https://bootstrap.pypa.io/get-pip.py",
+                    "~/.venv/bin/python3 get-pip.py",
+                    "~/.venv/bin/python3 -m pip install --upgrade matplotlib",
+                     "~/.venv/bin/python -m pip install --upgrade setuptools",
+                    "~/.venv/bin/pip install papermill ipykernel seaborn pandas xarray geopandas folium matplotlib mapclassify branca matplotlib pyprojroot netCDF4 workflow",
+                    "~/.venv/bin/python -m papermill --version",
+                            "~/.venv/bin/python3 -m papermill /fsxtestautomation/data_files/hydro-data/hydrofabric_builds_in.ipynb ~/pw/auto/scripts/tests/PI6/data/hydrofabric_builds_output_out.ipynb"],
+                                  "flag":"partly",
+     "output_notebook_location": "~/pw/auto/scripts/tests/PI6/data/hydrofabric_builds_out.ipynb",
+     "input_notebook_location":"/fsxtestautomation/data_files/hydro-data/hydrofabric_builds_in.ipynb"
+        }
+ 
+    ]
+
+
+
+
+}
