@@ -1,0 +1,25 @@
+{
+    "additional_data":[
+ 
+        {  
+            "docker_commands":[
+                                "/fsxtestautomation/data_files/hydro-data/start_jupyter_PI5_sub1.sh",
+                                "uv venv --python 3.12 --clear",
+                    "source .venv/bin/activate",
+                    "curl -O https://bootstrap.pypa.io/get-pip.py",
+                    "~/.venv/bin/python3 get-pip.py",
+                    "~/.venv/bin/python3 -m pip install --upgrade matplotlib",
+                    "~/.venv/bin/pip install papermill ipykernel seaborn pandas xarray geopandas folium matplotlib mapclassify branca matplotlib pyprojroot netCDF4",
+                    "~/.venv/bin/python -m papermill --version",
+                            "~/.venv/bin/python3 -m papermill /fsxtestautomation/data_files/hydro-data/ras_xs_in.ipynb ~/pw/auto/scripts/tests/PI5/data/ras_xs_out.ipynb"],
+                                  "flag":"partly",
+     "output_notebook_location": "~/pw/auto/scripts/tests/PI5/data/ras_xs_out.ipynb",
+     "input_notebook_location":"/fsxtestautomation/data_files/hydro-data/ras_xs_in.ipynb"
+        }
+ 
+    ]
+
+
+
+
+}
